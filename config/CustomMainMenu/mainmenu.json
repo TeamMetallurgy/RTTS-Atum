@@ -1,0 +1,193 @@
+{
+    "images":
+    {
+	
+		"black":
+        {
+            "image" : "mainmenu:textures/bg_menu.png",
+            "posX" : 74,
+            "posY" : 0,
+            "width" : 125,
+            "height" : 800,
+            "alignment" : "top_left"
+        },
+		"logo":
+        {
+            "image" : "mainmenu:textures/logo.png",
+            "posX" : 60,
+            "posY" : -50,
+            "width" : 130,
+            "height" : 130,
+            "alignment" : "center"
+        }
+	
+	},
+    
+    "buttons":
+    {     
+		"singleplayer":
+        {
+            "text" : "Singleplayer",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 9823197,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 75,
+            "posY" : -35,
+            "width" : 123,
+            "height" : 16,
+			"imageWidth" : 75,
+			"imageHeight" : 50,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },		
+
+		"multiplayer":
+        {
+            "text" : "Multiplayer",			
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 9823197,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 75,
+            "posY" : -15,
+            "width" : 123,
+            "height" : 16,
+			"imageWidth" : 75,
+			"imageHeight" : 50,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+               
+		"options":
+        {
+            "text" : "Options",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 9823197,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 75,
+            "posY" : 15,
+            "width" : 123,
+            "height" : 16,
+			"imageWidth" : 75,
+			"imageHeight" : 50,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+		        
+		"language":
+        {
+            "text" : "Language",
+			"texture" : "mainmenu:textures/btn.png",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 9823197,
+            "posX" : 75,
+            "posY" : 35,
+            "width" : 123,
+            "height" : 16,
+			"imageWidth" : 75,
+			"imageHeight" : 50,			
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+                    
+        "quit":
+        {
+            "text" : "Quit",
+			"normalTextColor" : 12303291,
+			"hoverTextColor" : 9823197,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 75,
+            "posY" : 55,
+            "width" : 123,
+            "height" : 16,
+			"imageWidth" : 75,
+			"imageHeight" : 50,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+		
+        "mods":
+        {
+            "text" : "Mods (#modsloaded#/#modsactive#)",
+			"normalTextColor" : 8816262,
+			"hoverTextColor" : 9823197,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 75,
+            "posY" : 105,
+            "width" : 123,
+            "height" : 16,
+			"imageWidth" : 75,
+			"imageHeight" : 50,
+			"alignment" : "left_center",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        }
+	},
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "Forge #forgeversion# for Minecraft #mcversion# - Copyright Mojang AB. Do not distribute!",
+            "posX" : 2,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+        
+		"packTxt":
+        {
+            "text" : "AAIII - 0.0.1a",
+            "posX" : 2,
+            "posY" : -25,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        }
+    },
+    
+	
+	"alignments":
+    {
+        "c1":
+        {
+            "factorWidth" : 0.5,
+            "factorHeight" : 0.7
+        },
+ 
+        "c2":
+        {
+            "factorWidth" : 0.2,
+            "factorHeight" : 0.2
+        }
+    },
+	
+    "other":
+    {
+		"background":
+		{
+			"image" : "mainmenu:textures/bg.png",
+			"mode" : "stretch"
+		}
+    }
+}
