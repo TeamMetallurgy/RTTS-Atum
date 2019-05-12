@@ -66,13 +66,7 @@ recipes.removeShaped(<yurtmod:yurt_wall_piece>);
 <yurtmod:yurt_wall_inner>.displayName = "Tent Wall";
 <yurtmod:cos_yurt_wall_inner>.displayName = "Tent Wall (Cosmetic)";
 <yurtmod:cos_yurt_wall_outer>.displayName = "Tent Wall (Cosmetic)";
-<yurtmod:cos_yurt_roof>.displayName = "Tent Roof (Cpsmetic)";
-<yurtmod:tent:0>.displayName = "Small Tent";
-<yurtmod:tent:1>.displayName = "Medium Tent";
-<yurtmod:tent:2>.displayName = "Large Tent";
-<yurtmod:tent:12>.displayName = "Huge Tent";
-<yurtmod:tent:13>.displayName = "Giant Tent";
-<yurtmod:tent:14>.displayName = "Massive Tent";
+<yurtmod:cos_yurt_roof>.displayName = "Tent Roof (Cosmetic)";
 
 //Super Mallet
 recipes.addShaped("Tent Mallet", <yurtmod:super_mallet>,
@@ -86,11 +80,46 @@ recipes.addShaped("Yurt Wall Section", <yurtmod:yurt_wall_piece>,
 	[<atum:linen_cloth>,stick,<atum:linen_cloth>],
 	[<atum:linen_cloth>,stick,<atum:linen_cloth>]]);
 
-recipes.removeShaped(<yurtmod:tent:0>);
-recipes.addShaped("Yurt", <yurtmod:tent:0>,
-[[null,null,null],
-	[null,<yurtmod:yurt_wall_piece>,null],
-	[<yurtmod:yurt_wall_piece>,<atum:palm_door>,<yurtmod:yurt_wall_piece>]]);
+recipes.remove(<yurtmod:depth_upgrade_stone>);
+recipes.addShaped("depth_upgrade_stone", <yurtmod:depth_upgrade_stone>,
+[[null,<atum:linen_cloth>,stone],
+	[null,stick,<atum:linen_cloth>],
+	[<minecraft:emerald>,null,null]]);
+	
+recipes.remove(<yurtmod:depth_upgrade_iron>);
+recipes.addShaped("depth_upgrade_iron", <yurtmod:depth_upgrade_iron>,
+[[null,<atum:linen_cloth>,<minecraft:iron_ingot>],
+	[null,stick,<atum:linen_cloth>],
+	[<minecraft:emerald>,null,null]]);
+	
+recipes.remove(<yurtmod:depth_upgrade_gold>);
+recipes.addShaped("depth_upgrade_gold", <yurtmod:depth_upgrade_gold>,
+[[null,<atum:linen_cloth>,<minecraft:gold_ingot>],
+	[null,stick,<atum:linen_cloth>],
+	[<minecraft:emerald>,null,null]]);
+	
+recipes.remove(<yurtmod:depth_upgrade_obsidian>);
+recipes.addShaped("depth_upgrade_obsidian", <yurtmod:depth_upgrade_obsidian>,
+[[null,<atum:linen_cloth>,<minecraft:obsidian>],
+	[null,stick,<atum:linen_cloth>],
+	[<minecraft:emerald>,null,null]]);
+
+recipes.remove(<yurtmod:depth_upgrade_diamond>);
+recipes.addShaped("depth_upgrade_diamond", <yurtmod:depth_upgrade_diamond>,
+[[null,<atum:linen_cloth>,<minecraft:diamond>],
+	[null,stick,<atum:linen_cloth>],
+	[<minecraft:emerald>,null,null]]);
+
+//recipes.remove(<yurtmod:tent>.withTag({TentData: {StructureWidthPrevious: 0 as short, StructureDepthCurrent: 0 as short, StructureDepthPrevious: 0 as short, StructureWidthCurrent: 0 as short, StructureOffsetZ: 0, StructureOffsetX: 7, StructureTentType: 0 as short}}));
+//recipes.addShaped("Yurt", <yurtmod:tent>.withTag({TentData: {StructureWidthPrevious: 0 as short, StructureDepthCurrent: 0 as short, StructureDepthPrevious: 0 as short, StructureWidthCurrent: 0 as short, StructureOffsetZ: 0, StructureOffsetX: 7, StructureTentType: 0 as short}}),
+//[[null,null,null],
+//	[null,<yurtmod:yurt_wall_piece>,null],
+//	[<yurtmod:yurt_wall_piece>,<atum:palm_door>,<yurtmod:yurt_wall_piece>]]);
+	
+//recipes.addShaped("Yurt2", <yurtmod:tent>.withTag({TentData: {StructureWidthPrevious: 1 as short, StructureDepthCurrent: 0 as short, StructureDepthPrevious: 0 as short, StructureWidthCurrent: 1 as short, StructureOffsetZ: 0, StructureOffsetX: 2, StructureTentType: 0 as short}}),
+//[[null,null,null],
+//	[null,<yurtmod:yurt_wall_piece>,null],
+//	[<yurtmod:yurt_wall_piece>,<yurtmod:tent>.withTag({TentData: {StructureWidthPrevious: 0 as short, StructureDepthCurrent: 0 as short, StructureDepthPrevious: 0 as short, StructureWidthCurrent: 0 as short, StructureOffsetZ: 0, StructureOffsetX: 7, StructureTentType: 0 as short}}),<yurtmod:yurt_wall_piece>]]);
 	
 //Remove Extra Stuff
 mods.jei.JEI.removeAndHide(<yurtmod:mallet>, true);	
