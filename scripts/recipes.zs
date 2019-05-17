@@ -617,3 +617,36 @@ recipes.addShapeless("negative", <chiselsandbits:negativeprint>,
 //Mirror design
 recipes.addShapeless("mirror", <chiselsandbits:mirrorprint>, 
   [<minecraft:water_bucket>, <atum:scroll>, <atum:ectoplasm>]);
+  
+////Extra Alchemy
+recipes.removeShaped(<extraalchemy:potion_bag>);
+recipes.addShaped("potion_bag 1", <extraalchemy:potion_bag>,
+ [[null,<minecraft:glass_bottle>,null],
+  [<minecraft:leather>,<atum:palm_crate>,<minecraft:leather>],
+  [<minecraft:leather>,<minecraft:leather>,<minecraft:leather>]]);
+
+recipes.addShaped("potion_bag 2", <extraalchemy:potion_bag>,
+ [[null,<minecraft:glass_bottle>,null],
+  [<minecraft:leather>,<atum:deadwood_crate>,<minecraft:leather>],
+  [<minecraft:leather>,<minecraft:leather>,<minecraft:leather>]]);
+
+//Pacifism
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:strong_harming"}), [<atum:golden_date>], <minecraft:potion>.withTag({Potion: "extraalchemy:pacifism_normal"}));
+
+//Hurry
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "extraalchemy:charged2_normal"}), [<atum:crunchy_scarab>], <minecraft:potion:0>.withTag({Potion: "extraalchemy:hurry_normal"}));
+
+//Charged 2
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "extraalchemy:charged_normal"}), [<minecraft:emerald>], <minecraft:potion>.withTag({Potion: "extraalchemy:charged2_normal"}));
+  
+//Piper Potion Test
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <minecraft:wheat>);
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), [<atum:emmer>], <minecraft:potion>.withTag({Potion: "extraalchemy:pyper_normal"}));
+
+//Concentration
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <minecraft:egg>);
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), [<atum:flax>], <minecraft:potion>.withTag({Potion: "extraalchemy:concentration_normal"}));
+
+//Photosynthesis
+brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), <minecraft:beetroot_seeds>);
+brewing.addBrew(<minecraft:potion>.withTag({Potion: "minecraft:awkward"}), [<atum:palm_sapling>], <minecraft:potion>.withTag({Potion: "extraalchemy:photosynthesis_normal"}));
