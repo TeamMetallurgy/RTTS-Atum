@@ -6,6 +6,13 @@ val stick = <ore:stickWood>;
 val wood = <ore:plankWood>;
 val stone = <ore:stone>;
 
+////Sound Muffler
+recipes.removeShaped(<supersoundmuffler:sound_muffler>);
+recipes.addShaped("Super Sound Muffler", <glassential:glass_light>,
+[[<atum:linen_cloth>,<atum:linen_cloth>,<atum:linen_cloth>],
+	[<atum:linen_cloth>,<minecraft:noteblock>,<atum:linen_cloth>],
+	[<atum:linen_cloth>,<atum:linen_cloth>,<atum:linen_cloth>]]);
+
 ////Glassential
 <glassential:glass_clear>.displayName = "Clear Crystal Glass";
 furnace.remove(<glassential:glass_clear>);
@@ -13,33 +20,33 @@ furnace.addRecipe(<glassential:glass_clear>,<atum:crystal_glass>);
 
 <glassential:glass_light>.displayName = "Luminous Crystal Glass";
 recipes.removeShaped(<glassential:glass_light>);
-recipes.addShaped("Light Glass", <glassential:glass_light>,
+recipes.addShaped("Light Glass", <glassential:glass_light> * 4,
 [[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<minecraft:glowstone>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>]]);
 	
 <glassential:glass_dark>.displayName = "Dark Crystal Glass";
 recipes.removeShaped(<glassential:glass_dark>);
-recipes.addShaped("Dark Glass 1", <glassential:glass_dark>,
+recipes.addShaped("Dark Glass 1", <glassential:glass_dark> * 4,
 [[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<minecraft:coal:0>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>]]);
 
-recipes.addShaped("Dark Glass 2", <glassential:glass_dark>,
+recipes.addShaped("Dark Glass 2", <glassential:glass_dark> * 4,
 [[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<minecraft:coal:1>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>]]);
 	
 <glassential:glass_ghostly>.displayName = "Ghostly Crystal Glass";
 recipes.removeShaped(<glassential:glass_ghostly>);
-recipes.addShaped("Ghostly Glass", <glassential:glass_ghostly>,
+recipes.addShaped("Ghostly Glass", <glassential:glass_ghostly> * 4,
 [[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<atum:ectoplasm>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>]]);
 	
 <glassential:glass_ethereal>.displayName = "Ethereal Crystal Glass";
 recipes.removeShaped(<glassential:glass_ethereal>);
-recipes.addShaped("Ethereal Glass", <glassential:glass_ethereal>,
+recipes.addShaped("Ethereal Glass", <glassential:glass_ethereal> * 4,
 [[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<atum:disenchanting_scroll>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>]]);
@@ -48,7 +55,7 @@ recipes.addShaped("Ethereal Glass", <glassential:glass_ethereal>,
 	
 <glassential:glass_redstone>.displayName = "Redstone Crystal Glass";
 recipes.removeShaped(<glassential:glass_redstone>);
-recipes.addShaped("Redstone Glass", <glassential:glass_redstone>,
+recipes.addShaped("Redstone Glass", <glassential:glass_redstone> * 4,
 [[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<minecraft:redstone_block>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>]]);
@@ -394,14 +401,16 @@ recipes.addShaped("clay barrel", <ceramics:clay_barrel>,
 <dwmh:whistle>.displayName = "Reed Flute";
 recipes.removeShaped(<dwmh:whistle>);
 recipes.addShaped("whistle", <dwmh:whistle>,
-[[<atum:papyrus>,<atum:papyrus>,<atum:papyrus>],
+[[<atum:papyrus_plant>,<atum:papyrus_plant>,<atum:papyrus_plant>],
 	[<minecraft:leather>,<minecraft:leather>,<minecraft:leather>],
-	[<atum:papyrus>,<atum:papyrus>,<atum:papyrus>]]);
+	[<atum:papyrus_plant>,<atum:papyrus_plant>,<atum:papyrus_plant>]]);
 	
 	
 ////Vanilla
 //Netherrack
 //recipes.removeSmelting(<minecraft:netherrack>);
+recipes.remove(<minecraft:nether_brick>);
+recipes.remove(<minecraft:wool>);
 furnace.remove(<minecraft:nether_brick>);
 <minecraft:netherrack>.displayName = "Smoldering Coals";
 
@@ -583,6 +592,7 @@ recipes.addShaped("warp_scroll", <waystones:warp_scroll>,
   
 ////Chisels and Bits
 //Bit Bag
+recipes.removeShaped(<chiselsandbits:bit_bag>);
 recipes.addShaped("ore_wool_bit_bag", <chiselsandbits:bit_bag>,
  [[<atum:linen_cloth>,<atum:linen_cloth>,<atum:linen_cloth>],
   [<atum:linen_cloth>,<chiselsandbits:block_bit>.withTag({id:320}),<atum:linen_cloth>],
@@ -598,4 +608,4 @@ recipes.addShapeless("negative", <chiselsandbits:negativeprint>,
   
 //Mirror design
 recipes.addShapeless("mirror", <chiselsandbits:mirrorprint>, 
-  [<minecraft:water_bucket>, <atum:scroll>, <ore:dustGlowstone>]);
+  [<minecraft:water_bucket>, <atum:scroll>, <atum:ectoplasm>]);
