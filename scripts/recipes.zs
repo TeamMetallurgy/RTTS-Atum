@@ -556,6 +556,7 @@ recipes.addShaped("tape", <storagedrawers:tape>,
   [<atum:scroll>,<atum:scroll>,<atum:scroll>]]);
   
 ////Ender Lantern
+recipes.remove(<adventurepack:lantern>
 <adventurepack:lantern>.displayName = "Ra's Gaze";
 recipes.addShaped("ras_gaze", <adventurepack:lantern>,
  [[<minecraft:diamond>,<minecraft:glowstone>,<minecraft:diamond>],
