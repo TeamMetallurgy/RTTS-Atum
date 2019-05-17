@@ -408,10 +408,10 @@ recipes.addShaped("whistle", <dwmh:whistle>,
 	
 ////Vanilla
 //Netherrack
-//recipes.removeSmelting(<minecraft:netherrack>);
-recipes.remove(<minecraft:nether_brick>);
+recipes.remove(<minecraft:netherbrick>);
 recipes.remove(<minecraft:wool>);
-furnace.remove(<minecraft:nether_brick>);
+furnace.remove(<minecraft:netherbrick>);
+mods.atum.Kiln.blacklist("minecraft:netherbrick");
 <minecraft:netherrack>.displayName = "Smoldering Coals";
 
 //Redstone Observer
@@ -426,7 +426,14 @@ recipes.addShaped("glass_item_frame", <quark:glass_item_frame>,
 [[<atum:thin_crystal_glass>,<atum:thin_crystal_glass>,<atum:thin_crystal_glass>],
 	[<atum:thin_crystal_glass>,<minecraft:item_frame>,<atum:thin_crystal_glass>],
 	[<atum:thin_crystal_glass>,<atum:thin_crystal_glass>,<atum:thin_crystal_glass>]]);
-  
+	
+//Torch Arrow
+recipes.addShapeless("torch_arrow 1",<quark:arrow_torch>,[<minecraft:arrow>,<atum:palm_torch>]);
+recipes.addShapeless("torch_arrow 2",<quark:arrow_torch>,[<minecraft:arrow>,<atum:deadwood_torch>]);
+recipes.addShapeless("torch_arrow 3",<quark:arrow_torch>,[<minecraft:arrow>,<atum:limestone_torch>]);
+recipes.addShapeless("torch_arrow 4",<quark:arrow_torch>,[<minecraft:arrow>,<atum:bone_torch>]);
+recipes.addShapeless("torch_arrow 5",<quark:arrow_torch>,[<minecraft:arrow>,<atum:pharaoh_torch>]);
+
 ////Baubley Heart Canisters
 recipes.removeShapeless(<bhc:blue_heart_canister>);
 recipes.removeShapeless(<bhc:green_heart_canister>);
