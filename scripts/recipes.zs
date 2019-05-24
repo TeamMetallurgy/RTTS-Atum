@@ -225,6 +225,45 @@ recipes.addShaped("bed", <minecraft:bed>,
  [[null,null,null],
   [<atum:linen_white>,<atum:linen_white>,<atum:linen_white>],
   [wood,wood,wood]]);
+  
+  
+//Armor Stand
+recipes.removeShaped(<minecraft:armor_stand>);
+
+recipes.addShaped("armor stand 1", <minecraft:armor_stand>,
+ [[<atum:limestone_wall>,<atum:limestone_wall>,<atum:limestone_wall>],
+  [null,<atum:limestone_wall>,null],
+  [<atum:limestone_wall>,<atum:limestone_large_slab>,<atum:limestone_wall>]]);
+  
+recipes.addShaped("armor stand 2", <minecraft:armor_stand>,  
+   [[<atum:limestone_cracked_wall>,<atum:limestone_cracked_wall>,<atum:limestone_cracked_wall>],
+  [null,<atum:limestone_cracked_wall>,null],
+  [<atum:limestone_cracked_wall>,<atum:limestone_large_slab>,<atum:limestone_cracked_wall>]]);
+  
+recipes.addShaped("armor stand 3", <minecraft:armor_stand>,  
+   [[<atum:small_wall>,<atum:small_wall>,<atum:small_wall>],
+  [null,<atum:small_wall>,null],
+  [<atum:small_wall>,<atum:limestone_large_slab>,<atum:small_wall>]]);
+
+recipes.addShaped("armor stand 4", <minecraft:armor_stand>,  
+   [[<atum:large_wall>,<atum:large_wall>,<atum:large_wall>],
+  [null,<atum:large_wall>,null],
+  [<atum:large_wall>,<atum:limestone_large_slab>,<atum:large_wall>]]);
+
+recipes.addShaped("armor stand 5", <minecraft:armor_stand>,  
+   [[<atum:cracked_brick_wall>,<atum:cracked_brick_wall>,<atum:cracked_brick_wall>],
+  [null,<atum:cracked_brick_wall>,null],
+  [<atum:cracked_brick_wall>,<atum:limestone_large_slab>,<atum:cracked_brick_wall>]]);
+  
+recipes.addShaped("armor stand 6", <minecraft:armor_stand>,  
+   [[<atum:chiseled_wall>,<atum:chiseled_wall>,<atum:chiseled_wall>],
+  [null,<atum:chiseled_wall>,null],
+  [<atum:chiseled_wall>,<atum:limestone_large_slab>,<atum:chiseled_wall>]]);
+  
+recipes.addShaped("armor stand 7", <minecraft:armor_stand>,  
+   [[<atum:carved_wall>,<atum:carved_wall>,<atum:carved_wall>],
+  [null,<atum:carved_wall>,null],
+  [<atum:carved_wall>,<atum:limestone_large_slab>,<atum:carved_wall>]]);
 
 ////Ceramics
 //Removals
