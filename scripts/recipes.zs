@@ -233,7 +233,13 @@ recipes.addShaped("comparator", <minecraft:comparator>,
  
 //Ankh of Undying
 <minecraft:totem_of_undying>.displayName = "Ankh of Undying";
-  
+
+//Beacon
+recipes.removeShaped(<minecraft:beacon>);
+recipes.addShaped("beacon", <minecraft:beacon>,
+ [[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>],
+  [<minecraft:diamond_block>,<atum:radiant_beacon>,<minecraft:diamond_block>],
+  [<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
   
 //Armor Stand
 recipes.removeShaped(<minecraft:armor_stand>);
