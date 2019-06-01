@@ -60,6 +60,9 @@ recipes.addShaped("Redstone Glass", <glassential:glass_redstone> * 4,
 [[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<minecraft:redstone_block>,<atum:crystal_glass>],
 	[<atum:crystal_glass>,<atum:crystal_glass>,<atum:crystal_glass>]]);
+	
+//Crystal Glass > Clear Glass
+mods.atum.Kiln.addRecipe(<atum:crystal_glass>, <glassential:glass_clear>, 0.3);
 
 ////Nomadic Tents
 <yurtmod:super_mallet>.displayName = "Tent Mallet";
@@ -656,7 +659,7 @@ recipes.addShaped("warp_scroll", <waystones:warp_scroll>,
 recipes.removeShaped(<chiselsandbits:bit_bag>);
 recipes.addShaped("ore_wool_bit_bag", <chiselsandbits:bit_bag>,
  [[<atum:linen_cloth>,<atum:linen_cloth>,<atum:linen_cloth>],
-  [<atum:linen_cloth>,<chiselsandbits:chisel_stone>.damageItem(1),<atum:linen_cloth>],
+  [<atum:linen_cloth>,<chiselsandbits:chisel_stone>,<atum:linen_cloth>],
   [<atum:linen_cloth>,<atum:linen_cloth>,<atum:linen_cloth>]]);
   
 //Positive design
