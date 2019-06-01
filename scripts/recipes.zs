@@ -1,5 +1,6 @@
 import crafttweaker.enchantments.IEnchantment;
 import crafttweaker.item.IItemCondition;
+import crafttweaker.item.IItemStack;
 
 val wool = <ore:wool>;
 val stick = <ore:stickWood>;
@@ -74,6 +75,17 @@ recipes.removeShaped(<yurtmod:yurt_wall_piece>);
 <yurtmod:cos_yurt_wall_inner>.displayName = "Tent Wall (Cosmetic)";
 <yurtmod:cos_yurt_wall_outer>.displayName = "Tent Wall (Cosmetic)";
 <yurtmod:cos_yurt_roof>.displayName = "Tent Roof (Cosmetic)";
+
+recipes.removeByRecipeName("yurtmod:tents/depth_1");
+recipes.removeByRecipeName("yurtmod:tents/depth_2");
+recipes.removeByRecipeName("yurtmod:tents/depth_3");
+recipes.removeByRecipeName("yurtmod:tents/depth_4");
+recipes.removeByRecipeName("yurtmod:tents/depth_5");
+
+//recipes.addShaped("Depth 0 to 1", <yurtmod:tent>.updateTag({TentData: {StructureDepthCurrent: 1 as short}}),
+//[[<atum:sand>,<atum:limestone>,<atum:sand>],
+//	[<atum:sand>,<yurtmod:tent>.withTag({TentData: {StructureDepthCurrent: 0 as short}}),<atum:sand>],
+//	[<atum:sand>,<yurtmod:depth_upgrade_stone>,<atum:sand>]]);
 
 //Super Mallet
 recipes.addShaped("Tent Mallet", <yurtmod:super_mallet>,
@@ -218,13 +230,9 @@ recipes.addShaped("comparator", <minecraft:comparator>,
  [[null,<minecraft:redstone_torch>,null],
   [<minecraft:redstone_torch>,<atum:ectoplasm>,<minecraft:redstone_torch>],
   [stone,stone,stone]]);
-
-//Bed
-recipes.removeShaped(<minecraft:bed>);
-recipes.addShaped("bed", <minecraft:bed>,
- [[null,null,null],
-  [<atum:linen_white>,<atum:linen_white>,<atum:linen_white>],
-  [wood,wood,wood]]);
+ 
+//Ankh of Undying
+<minecraft:totem_of_undying>.displayName = "Ankh of Undying";
   
   
 //Armor Stand
@@ -642,7 +650,7 @@ recipes.addShaped("warp_scroll", <waystones:warp_scroll>,
 recipes.removeShaped(<chiselsandbits:bit_bag>);
 recipes.addShaped("ore_wool_bit_bag", <chiselsandbits:bit_bag>,
  [[<atum:linen_cloth>,<atum:linen_cloth>,<atum:linen_cloth>],
-  [<atum:linen_cloth>,<chiselsandbits:block_bit>.withTag({id:320}),<atum:linen_cloth>],
+  [<atum:linen_cloth>,<chiselsandbits:chisel_stone>.damageItem(1),<atum:linen_cloth>],
   [<atum:linen_cloth>,<atum:linen_cloth>,<atum:linen_cloth>]]);
   
 //Positive design
