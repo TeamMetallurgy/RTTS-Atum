@@ -1,0 +1,35 @@
+Return to the Sands: Atum Edition 1.0.3b
+
+================================
+Mod Updates and Additions
+================================
+-Added Corpse 1.0.1
+-Updated Mantle to 1.3.3.55
+-Updated JETIF to 1.4.2
+-Updated JEI to 4.15.0.279
+-Updated Champions to 1.0.9
+-Updated COFH Core to 4.6.3.27
+-Updated COFH Vanilla Satchels+ to 1.0.2.4
+-Updated Better Questing to 3.5.300
+-Updated Standard Expansion to 3.4.158
+-Updated Bookshelf to 2.3.581
+-Updated Journeymap to 5.5.5b7
+-Updated CraftTweaker to 4.1.18
+-Updated ChiselandBits to 14.32
+-Updated AutoRegLib to 1.3-30
+-Updated Atum to 2.0.8
+
+================================
+Changes and Fixes
+================================
+-[Chisel & Bits] Fixed Chisels & Bits Bag being uncraftable
+-[Glassential] Added Kiln recipe for Crystal Glass to Clear Crystal Glass
+-[Vanilla/Atum] Added Beacon recipe using Radiant Beacon as base
+-[Vanilla] Renamed Totem of Undying to match its new art
+-[Atum] Updating Atum fixed issue with Thin Crystal Glass texture
+-[Atum] Updating Atum fixed issue with friendly Stone Wardens being considered monsters
+
+================================
+Resources
+================================
+-[Nomadic Tents] Changed the Ornate Tent Wall to be Cyan instead of Red
