@@ -5,7 +5,7 @@
     "affixes": 0,
     "growthFactor": 1,
     "chance": 0.05,
-    "potions": ["extraalchemy:concentration", "minecraft:regeneration;0"]
+    "potions": ["extraalchemy:concentration;0", "minecraft:regeneration;0"]
   },
   {
     "tier": 2,
@@ -13,7 +13,7 @@
     "affixes": 0,
     "growthFactor": 2,
     "chance": 0.5,
-    "potions": ["extraalchemy:concentration", "minecraft:regeneration;0"]
+    "potions": ["extraalchemy:concentration;1", "minecraft:regeneration;0"]
   },
   {
     "tier": 3,
@@ -21,7 +21,7 @@
     "affixes": 0,
     "growthFactor": 4,
     "chance": 0.5,
-    "potions": ["extraalchemy:concentration", "minecraft:regeneration;1"]
+    "potions": ["extraalchemy:concentration;2", "minecraft:regeneration;1"]
   },
   {
     "tier": 4,
@@ -29,7 +29,7 @@
     "affixes": 0,
     "growthFactor": 6,
     "chance": 0.5,
-    "potions": ["extraalchemy:concentration", "minecraft:regeneration;1"]
+    "potions": ["extraalchemy:concentration_normal;0", "minecraft:regeneration;1"]
   },
   {
     "tier": 5,
@@ -37,7 +37,7 @@
     "affixes": 0,
     "growthFactor": 8,
     "chance": 0.5,
-    "potions": ["extraalchemy:concentration", "minecraft:regeneration;2"]
+    "potions": ["extraalchemy:concentration_normal;1", "minecraft:regeneration;2"]
   },
   {
     "tier": 6,
@@ -45,6 +45,6 @@
     "affixes": 0,
     "growthFactor": 12,
     "chance": 0.5,
-    "potions": ["extraalchemy:concentration", "minecraft:regeneration;2"]
+    "potions": ["extraalchemy:concentration_normal;2", "minecraft:regeneration;2"]
   }
 ]

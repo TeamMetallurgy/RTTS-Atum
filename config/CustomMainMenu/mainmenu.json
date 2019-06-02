@@ -1,8 +1,51 @@
 {
-    "images":
+    "labels":
+    {
+       "packTxt":
+        {
+            "text" : "RTTS: Atum - 0.0.1a",
+            "posX" : -96,
+            "posY" : -30,
+            "color" : 8759721,
+            "alignment" : "bottom_right",
+			"action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://github.com/TeamMetallurgy/RTTS-Atum"
+            }
+        },
+		"shadowTxt":
+        {
+            "text" : "By @Shadowclaimer",
+            "posX" : -96,
+            "posY" : -20,
+            "color" : 8759721,
+            "alignment" : "bottom_right",
+			"action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://twitter.com/Shadowclaimer"
+            }
+        },
+		"dannyTxt":
+        {
+            "text" : "Logo by @TrisAstral",
+            "posX" : -104,
+            "posY" : -10,
+            "color" : 8759721,
+            "alignment" : "bottom_right",
+			"action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://twitter.com/TrisAstral"
+            }
+        }
+    },
+	
+	"images":
     {
 	
-		"black":
+		"back":
         {
             "image" : "mainmenu:textures/bg_menu.png",
             "posX" : 74,
@@ -11,11 +54,12 @@
             "height" : 800,
             "alignment" : "top_left"
         },
+		
 		"logo":
         {
             "image" : "mainmenu:textures/logo.png",
             "posX" : 60,
-            "posY" : -50,
+            "posY" : -70,
             "width" : 130,
             "height" : 130,
             "alignment" : "center"
@@ -123,7 +167,6 @@
                 "type" : "quit"
             }
         },
-		
         "mods":
         {
             "text" : "Mods (#modsloaded#/#modsactive#)",
@@ -131,40 +174,114 @@
 			"hoverTextColor" : 9823197,
 			"texture" : "mainmenu:textures/btn.png",
             "posX" : 75,
-            "posY" : 105,
+            "posY" : -35,
             "width" : 123,
             "height" : 16,
 			"imageWidth" : 75,
 			"imageHeight" : 50,
-			"alignment" : "left_center",
+			"alignment" : "bottom_left",
             "action" : 
             {
                 "type" : "openGui",
                 "gui" : "mods"
             }
+        },
+		"report":
+        {
+            "text" : "Report Issues",
+			"normalTextColor" : 8816262,
+			"hoverTextColor" : 9823197,
+			"texture" : "mainmenu:textures/btn.png",
+            "posX" : 75,
+            "posY" : -18,
+            "width" : 123,
+            "height" : 16,
+			"imageWidth" : 75,
+			"imageHeight" : 50,
+			"alignment" : "bottom_left",
+			"action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://github.com/TeamMetallurgy/RTTS-Atum/issues"
+            }
+        },
+		"twitterButton":
+        {
+            "texture" : "custommainmenu:textures/gui/buttons/twitter.png",
+			"normalTextColor" : 8816262,
+			"hoverTextColor" : 9823197,
+			"text" : "",
+			"width" : 16,
+			"height" : 16,
+            "posX" : 0,
+            "posY" : -16,
+			"imageWidth" : 16,
+			"imageHeight" : 16,
+			"alignment" : "bottom_left",
+			"action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://twitter.com/shadowclaimer"
+            }
+        },
+		"youtubeButton":
+        {
+            "texture" : "custommainmenu:textures/gui/buttons/youtube.png",
+			"normalTextColor" : 8816262,
+			"hoverTextColor" : 9823197,
+			"text" : "",
+			"width" : 16,
+			"height" : 16,
+            "posX" : 16,
+            "posY" : -16,
+			"imageWidth" : 16,
+			"imageHeight" : 16,
+			"alignment" : "bottom_left",
+			"action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://www.youtube.com/channel/UCYiZOriVGfAgGI369r_Q8qA"
+            }
+        },
+		"twitchButton":
+        {
+            "texture" : "custommainmenu:textures/gui/buttons/twitch.png",
+			"normalTextColor" : 8816262,
+			"hoverTextColor" : 9823197,
+			"text" : "",
+			"width" : 16,
+			"height" : 16,
+            "posX" : 32,
+            "posY" : -16,
+			"imageWidth" : 16,
+			"imageHeight" : 16,
+			"alignment" : "bottom_left",
+			"action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://www.twitch.tv/shadowclaimer"
+            }
+        },
+		"discordButton":
+		{
+            "texture" : "custommainmenu:textures/gui/buttons/discord.png",
+			"normalTextColor" : 8816262,
+			"hoverTextColor" : 9823197,
+			"text" : "",
+			"width" : 16,
+			"height" : 16,
+            "posX" : 48,
+            "posY" : -16,
+			"imageWidth" : 16,
+			"imageHeight" : 16,
+			"alignment" : "bottom_left",
+			"action" : 
+            {
+                "type" : "openLink",
+                "link" : "https://discord.gg/wbFSPuT"
+            }
         }
 	},
-    
-    "texts":
-    {
-        "mojang":
-        {
-            "text" : "Forge #forgeversion# for Minecraft #mcversion# - Copyright Mojang AB. Do not distribute!",
-            "posX" : 2,
-            "posY" : -10,
-            "color" : -1,
-            "alignment" : "bottom_left"
-        },
-        
-		"packTxt":
-        {
-            "text" : "AAIII - 0.0.1a",
-            "posX" : 2,
-            "posY" : -25,
-            "color" : -1,
-            "alignment" : "bottom_left"
-        }
-    },
     
 	
 	"alignments":

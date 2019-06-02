@@ -1,0 +1,14 @@
+		refresh
+        {
+            text  ,
+            posX  20,
+            posY  20,
+			alignment  left_center,
+            width  20,
+            height  20,
+            texture  custommainmenutexturesguibuttons.png,
+            action  
+            {
+                type  refresh
+            }
+        },
